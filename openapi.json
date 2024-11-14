@@ -786,21 +786,21 @@
           }
         ]
       }
-    }
-  },
-  "security": {
-    "bearerToken": {
-      "type": "http",
-      "scheme": "bearer",
-      "description": "Default authentication mechanism"
     },
-    "oauth2": {
-      "type": "oauth2",
-      "flows": {
-        "authorizationCode": {
-          "authorizationUrl": "https://api.vercel.com/oauth/authorize",
-          "tokenUrl": "https://api.vercel.com/oauth/access_token",
-          "scopes": {}
+    "securitySchemes": {
+      "bearerToken": {
+        "type": "http",
+        "scheme": "bearer",
+        "description": "Default authentication mechanism"
+      },
+      "oauth2": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://api.vercel.com/oauth/authorize",
+            "tokenUrl": "https://api.vercel.com/oauth/access_token",
+            "scopes": {}
+          }
         }
       }
     }
